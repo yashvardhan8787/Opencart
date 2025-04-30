@@ -28,7 +28,7 @@ public class HomePage extends BasePage {
 		linkLogin.click();
 	}
 	
-	public void clickRgesitrationLink() {
+	public void clickRegistrationLink() {
 		linkRegistration.click();
 	}
 	

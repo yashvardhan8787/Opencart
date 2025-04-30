@@ -1,0 +1,24 @@
+16:56:22.344 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\Lenovo\OneDrive\Desktop\QAEnv\HybridDrivenFrameWork\opencart\testng.xml] otherwise TestNG may fail or not work as expected.
+16:56:22.805 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Lenovo\OneDrive\Desktop\QAEnv\HybridDrivenFrameWork\opencart\testng.xml
+
+16:58:15.598 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\Lenovo\OneDrive\Desktop\QAEnv\HybridDrivenFrameWork\opencart\testng.xml] otherwise TestNG may fail or not work as expected.
+16:58:16.085 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Lenovo\OneDrive\Desktop\QAEnv\HybridDrivenFrameWork\opencart\testng.xml
+
+17:00:28.138 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Lenovo\OneDrive\Desktop\QAEnv\HybridDrivenFrameWork\opencart\testng.xml
+
+17:00:34.762 [main] INFO  testCases.TC001_AccountRegistrationTest - ************************** Test Start *******************************
+17:00:34.940 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on My Account
+17:00:35.772 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Registration option
+17:00:35.914 [main] INFO  testCases.TC001_AccountRegistrationTest - Entered First Name: Ntnwl
+17:00:36.008 [main] INFO  testCases.TC001_AccountRegistrationTest - Entered Last Name: Pvejwqn
+17:00:36.131 [main] INFO  testCases.TC001_AccountRegistrationTest - Entered Email Address: mxwkfl@coqy.com
+17:00:36.312 [main] INFO  testCases.TC001_AccountRegistrationTest - Entered Phone Number: 6637123867
+17:00:36.482 [main] INFO  testCases.TC001_AccountRegistrationTest - Entered Password
+17:00:36.630 [main] INFO  testCases.TC001_AccountRegistrationTest - Entered Confirm Password
+17:00:36.771 [main] INFO  testCases.TC001_AccountRegistrationTest - Checked the privacy policy option
+17:00:37.712 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on continue button
+17:00:37.860 [main] INFO  testCases.TC001_AccountRegistrationTest - Registration successful!
+17:00:37.860 [main] INFO  testCases.TC001_AccountRegistrationTest - ************************** Test Over *******************************
