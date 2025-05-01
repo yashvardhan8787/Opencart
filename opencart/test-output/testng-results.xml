@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-30T20:33:14 IST" name="CrossBrowserTestSuite" finished-at="2025-04-30T20:33:34 IST" duration-ms="19107">
+  <suite started-at="2025-05-01T21:01:01 IST" name="Suite" finished-at="2025-05-01T21:02:08 IST" duration-ms="66925">
     <groups>
     </groups>
-    <test started-at="2025-04-30T20:33:14 IST" name="ChromeTest" finished-at="2025-04-30T20:33:25 IST" duration-ms="10026">
-      <class name="testCases.TC001_AccountRegistrationTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegistrationTest@46074492]" started-at="2025-04-30T20:33:15 IST" name="setUp" finished-at="2025-04-30T20:33:18 IST" duration-ms="3791" status="PASS">
+    <test started-at="2025-05-01T21:01:01 IST" name="RegistrationTest" finished-at="2025-05-01T21:02:08 IST" duration-ms="66925">
+      <class name="testCases.TC002_AccountLoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:01:01 IST" name="setUp" finished-at="2025-05-01T21:01:05 IST" duration-ms="3834" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,71 +23,176 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyUserCanRegisterSuccessfully()[pri:0, instance:testCases.TC001_AccountRegistrationTest@46074492]" started-at="2025-04-30T20:33:18 IST" name="verifyUserCanRegisterSuccessfully" finished-at="2025-04-30T20:33:24 IST" duration-ms="5705" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserCanRegisterSuccessfully -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_AccountRegistrationTest@46074492]" started-at="2025-04-30T20:33:24 IST" name="tearDown" finished-at="2025-04-30T20:33:25 IST" duration-ms="418" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC001_AccountRegistrationTest -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2025-04-30T20:33:14 IST" name="EdgeTest" finished-at="2025-04-30T20:33:27 IST" duration-ms="12152">
-      <class name="testCases.TC001_AccountRegistrationTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegistrationTest@7e70bd39]" started-at="2025-04-30T20:33:15 IST" name="setUp" finished-at="2025-04-30T20:33:21 IST" duration-ms="6207" status="PASS">
+        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:01:07 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-01T21:01:19 IST" duration-ms="12115" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Windows]]>
+                <![CDATA[yash]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[yash1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected successful login, but login failed. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected successful login, but login failed. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testCases.TC002_AccountLoginTest.verifyUserCanLoginSuccessfully(TC002_AccountLoginTest.java:49)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanLoginSuccessfully -->
+        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:01:19 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-01T21:01:31 IST" duration-ms="11428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yash @gmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[yash1235]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyUserCanRegisterSuccessfully()[pri:0, instance:testCases.TC001_AccountRegistrationTest@7e70bd39]" started-at="2025-04-30T20:33:21 IST" name="verifyUserCanRegisterSuccessfully" finished-at="2025-04-30T20:33:25 IST" duration-ms="4060" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserCanRegisterSuccessfully -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_AccountRegistrationTest@7e70bd39]" started-at="2025-04-30T20:33:25 IST" name="tearDown" finished-at="2025-04-30T20:33:27 IST" duration-ms="1856" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC001_AccountRegistrationTest -->
-    </test> <!-- EdgeTest -->
-    <test started-at="2025-04-30T20:33:14 IST" name="FireFoxTest" finished-at="2025-04-30T20:33:34 IST" duration-ms="19107">
-      <class name="testCases.TC001_AccountRegistrationTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegistrationTest@43ed0ff3]" started-at="2025-04-30T20:33:15 IST" name="setUp" finished-at="2025-04-30T20:33:30 IST" duration-ms="15050" status="PASS">
+        </test-method> <!-- verifyUserCanLoginSuccessfully -->
+        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:01:31 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-01T21:01:42 IST" duration-ms="11211" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Windows]]>
+                <![CDATA[yash@]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[yash1236]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyUserCanRegisterSuccessfully()[pri:0, instance:testCases.TC001_AccountRegistrationTest@43ed0ff3]" started-at="2025-04-30T20:33:30 IST" name="verifyUserCanRegisterSuccessfully" finished-at="2025-04-30T20:33:32 IST" duration-ms="2543" status="PASS">
+        </test-method> <!-- verifyUserCanLoginSuccessfully -->
+        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:01:42 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-01T21:01:53 IST" duration-ms="11440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[  @gmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[yash1237]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserCanRegisterSuccessfully -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_AccountRegistrationTest@43ed0ff3]" started-at="2025-04-30T20:33:32 IST" name="tearDown" finished-at="2025-04-30T20:33:34 IST" duration-ms="1480" status="PASS">
+        </test-method> <!-- verifyUserCanLoginSuccessfully -->
+        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:01:53 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-01T21:02:05 IST" duration-ms="11715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yash@gmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[yash1238]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanLoginSuccessfully -->
+        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:02:05 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-01T21:02:07 IST" duration-ms="2363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sureshp7263@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[yash1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanLoginSuccessfully -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:02:08 IST" name="tearDown" finished-at="2025-05-01T21:02:08 IST" duration-ms="838" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC001_AccountRegistrationTest -->
-    </test> <!-- FireFoxTest -->
-  </suite> <!-- CrossBrowserTestSuite -->
+      </class> <!-- testCases.TC002_AccountLoginTest -->
+    </test> <!-- RegistrationTest -->
+  </suite> <!-- Suite -->
 </testng-results>

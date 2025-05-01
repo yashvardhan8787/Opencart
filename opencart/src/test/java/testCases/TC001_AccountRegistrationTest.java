@@ -12,7 +12,8 @@ public class TC001_AccountRegistrationTest extends BaseTest {
 
     @Test
     public void verifyUserCanRegisterSuccessfully() {
-        logger.info("************************** Test Start *******************************");
+        logger.info("************************** TC001 Test Start *******************************");
+        try {
 
         HomePage hp = new HomePage(driver);
 
@@ -56,7 +57,7 @@ public class TC001_AccountRegistrationTest extends BaseTest {
 
         RegistrationSuccessPage successPage = new RegistrationSuccessPage(driver);
 
-        try {
+     
             Assert.assertEquals(successPage.regSuccessMsg(), "Your Account Has Been Created!", "Registration message mismatch!");
             logger.info("Registration successful!");
         } catch (AssertionError e) {

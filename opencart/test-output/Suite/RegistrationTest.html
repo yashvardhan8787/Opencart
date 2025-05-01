@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Test</title>
+<title>TestNG:  RegistrationTest</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Test</h2><table border='1' align="center">
+<h2 align='center'>RegistrationTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu May 01 11:02:01 IST 2025</td>
+<td>Started on:</td><td>Thu May 01 21:01:01 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14232 ms)</td>
+<tr><td>Total time:</td><td>66 seconds (66925 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC002_AccountLoginTest.verifyUserCanLoginSuccessfully()'><b>verifyUserCanLoginSuccessfully</b><br>Test class: testCases.TC002_AccountLoginTest</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.info(String)&quot; because &quot;this.logger&quot; is null
-	at testCases.TC002_AccountLoginTest.verifyUserCanLoginSuccessfully(TC002_AccountLoginTest.java:14)
+<td title='testCases.TC002_AccountLoginTest.verifyUserCanLoginSuccessfully()'><b>verifyUserCanLoginSuccessfully</b><br>Test class: testCases.TC002_AccountLoginTest<br>Parameters: yash, yash1234, Valid</td>
+<td><div><pre>java.lang.AssertionError: Expected successful login, but login failed. expected [true] but found [false]
+	at testCases.TC002_AccountLoginTest.verifyUserCanLoginSuccessfully(TC002_AccountLoginTest.java:49)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace185583672", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace185583672'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.info(String)&quot; because &quot;this.logger&quot; is null
-	at testCases.TC002_AccountLoginTest.verifyUserCanLoginSuccessfully(TC002_AccountLoginTest.java:14)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace724128993", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace724128993'><pre>java.lang.AssertionError: Expected successful login, but login failed. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at testCases.TC002_AccountLoginTest.verifyUserCanLoginSuccessfully(TC002_AccountLoginTest.java:49)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -110,8 +113,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>testCases.TC002_AccountLoginTest@7caa550</td></tr>
+<td>12</td>
+<td>testCases.TC002_AccountLoginTest@46074492</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -122,10 +125,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC001_AccountRegistrationTest.verifyUserCanRegisterSuccessfully()'><b>verifyUserCanRegisterSuccessfully</b><br>Test class: testCases.TC001_AccountRegistrationTest</td>
+<td title='testCases.TC002_AccountLoginTest.verifyUserCanLoginSuccessfully()'><b>verifyUserCanLoginSuccessfully</b><br>Test class: testCases.TC002_AccountLoginTest<br>Parameters:   @gmail, yash1237, Invalid</td>
 <td></td>
-<td>5</td>
-<td>testCases.TC001_AccountRegistrationTest@2c715e84</td></tr>
+<td>11</td>
+<td>testCases.TC002_AccountLoginTest@46074492</td></tr>
+<tr>
+<td title='testCases.TC002_AccountLoginTest.verifyUserCanLoginSuccessfully()'><b>verifyUserCanLoginSuccessfully</b><br>Test class: testCases.TC002_AccountLoginTest<br>Parameters: yash @gmail, yash1235, Invalid</td>
+<td></td>
+<td>11</td>
+<td>testCases.TC002_AccountLoginTest@46074492</td></tr>
+<tr>
+<td title='testCases.TC002_AccountLoginTest.verifyUserCanLoginSuccessfully()'><b>verifyUserCanLoginSuccessfully</b><br>Test class: testCases.TC002_AccountLoginTest<br>Parameters: yash@gmail, yash1238, Invalid</td>
+<td></td>
+<td>11</td>
+<td>testCases.TC002_AccountLoginTest@46074492</td></tr>
+<tr>
+<td title='testCases.TC002_AccountLoginTest.verifyUserCanLoginSuccessfully()'><b>verifyUserCanLoginSuccessfully</b><br>Test class: testCases.TC002_AccountLoginTest<br>Parameters: sureshp7263@gmail.com, yash1234, Valid</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC002_AccountLoginTest@46074492</td></tr>
+<tr>
+<td title='testCases.TC002_AccountLoginTest.verifyUserCanLoginSuccessfully()'><b>verifyUserCanLoginSuccessfully</b><br>Test class: testCases.TC002_AccountLoginTest<br>Parameters: yash@, yash1236, Invalid</td>
+<td></td>
+<td>11</td>
+<td>testCases.TC002_AccountLoginTest@46074492</td></tr>
 </table><p>
 </body>
 </html>
