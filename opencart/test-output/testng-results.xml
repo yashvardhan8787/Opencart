@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-01T21:01:01 IST" name="Suite" finished-at="2025-05-01T21:02:08 IST" duration-ms="66925">
+  <suite started-at="2025-05-23T11:20:53 IST" name="Suite" finished-at="2025-05-23T11:28:22 IST" duration-ms="448705">
     <groups>
     </groups>
-    <test started-at="2025-05-01T21:01:01 IST" name="RegistrationTest" finished-at="2025-05-01T21:02:08 IST" duration-ms="66925">
+    <test started-at="2025-05-23T11:20:53 IST" name="RegistrationTest" finished-at="2025-05-23T11:28:22 IST" duration-ms="448705">
       <class name="testCases.TC002_AccountLoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:01:01 IST" name="setUp" finished-at="2025-05-01T21:01:05 IST" duration-ms="3834" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@2c715e84]" started-at="2025-05-23T11:20:54 IST" name="setUp" finished-at="2025-05-23T11:27:04 IST" duration-ms="370553" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:01:07 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-01T21:01:19 IST" duration-ms="12115" status="FAIL">
+        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@2c715e84]" started-at="2025-05-23T11:27:13 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-23T11:27:27 IST" duration-ms="13844" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -83,7 +83,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanLoginSuccessfully -->
-        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:01:19 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-01T21:01:31 IST" duration-ms="11428" status="PASS">
+        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@2c715e84]" started-at="2025-05-23T11:27:27 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-23T11:27:40 IST" duration-ms="12707" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,7 +104,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanLoginSuccessfully -->
-        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:01:31 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-01T21:01:42 IST" duration-ms="11211" status="PASS">
+        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@2c715e84]" started-at="2025-05-23T11:27:40 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-23T11:27:52 IST" duration-ms="12189" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,7 +125,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanLoginSuccessfully -->
-        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:01:42 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-01T21:01:53 IST" duration-ms="11440" status="PASS">
+        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@2c715e84]" started-at="2025-05-23T11:27:52 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-23T11:28:05 IST" duration-ms="12313" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,7 +146,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanLoginSuccessfully -->
-        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:01:53 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-01T21:02:05 IST" duration-ms="11715" status="PASS">
+        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@2c715e84]" started-at="2025-05-23T11:28:05 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-23T11:28:17 IST" duration-ms="12255" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -167,7 +167,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanLoginSuccessfully -->
-        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:02:05 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-01T21:02:07 IST" duration-ms="2363" status="PASS">
+        <test-method signature="verifyUserCanLoginSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_AccountLoginTest@2c715e84]" started-at="2025-05-23T11:28:17 IST" name="verifyUserCanLoginSuccessfully" data-provider="login_data" finished-at="2025-05-23T11:28:22 IST" duration-ms="4553" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -188,7 +188,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanLoginSuccessfully -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_AccountLoginTest@46074492]" started-at="2025-05-01T21:02:08 IST" name="tearDown" finished-at="2025-05-01T21:02:08 IST" duration-ms="838" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_AccountLoginTest@2c715e84]" started-at="2025-05-23T11:28:22 IST" name="tearDown" finished-at="2025-05-23T11:28:22 IST" duration-ms="575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
